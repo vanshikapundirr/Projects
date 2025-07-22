@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #header{
+        width: 100%;
+        height: 61px;
+        background-color:  rgb(21, 27, 40) ;
+        align-items: center;
+        display: flex;
+    }
+    p{
+        color: white;
+        font-size: 15px;
+    }
+    #img{
+        height: 40px;
+        padding: 5px;
+        align-content: center;
+        margin-top: 5px;
+        margin-left: 30px;
+    }
+    #lctn{
+        width: 130px;
+        height: 40px;
+        color: white;
+        margin-left: 20px;
+        font-size: 15px;
+    }
+    #spec{
+        width: 50px;
+        height: 40px;
+        border-radius: 2px;
+        background-color:  rgb(203, 200, 200);
+        color: rgb(52, 51, 51);
+    }
+    #search{
+        width: 800px;
+        height: 40px;
+        display: flex;
+        margin-left: 10px;
+    }
+    input{
+        width: 700px;
+        height: 35px;
+        border-radius: 2px;
+        
+        font-size: 15px;
+    }
+    #mag{
+        margin-top: 2px;
+        width: 35px;
+        height: 33px;
+        background-color: rgb(255, 174, 0);
+        margin-left: 2px;
+        border-radius: 2px;
+        padding: 2px;
+        align-content: center;
+        text-align: center;
+        
+    }
+    #lang{
+        width: 40px;
+        height: 40px;
+        color: white;
+        background-color:  rgb(21, 27, 40) ;
+        margin-left: 20px;
+        border: transparent;
+    }
+    #acc{
+        width: 120px;
+        height: 40px;
+        color: white;
+        background-color: rgb(21, 27, 40) ;
+        margin-left: 20px;
+        border: transparent;
+        font-size: 15px;
+    }
+    #order{
+        width: 100px;
+        height: 40px;
+        box-sizing: border-box;
+        margin-left: 30px;
+        color: white;
+        font-size: 16px; 
+
+    }
+    h4{
+        color: white;
+    }
+    #cartimg{
+        margin-left: 10px;
+    }
+    #header2{
+        width: 100%;
+        height: 48px;
+        background-color:  rgb(34, 43, 63) ;
+        display: flex;
+        
+    }
+    .box{
+        width: 80px;
+        height: 50px;
+        color: white;
+        align-content: center;
+        margin-left: 10px;
+    }
+    #bg{
+        width: 100%;
+        height: auto;
+        display: flex;
+    }
+    #bg2{
+        display: flex;
+        background: linear-gradient(to bottom, purple, rgb(241, 222, 241));
+        height: 460px;
+    }
+    
+    .wbox{
+        background-color: white;
+        width: 310px;
+        height: 400px;
+        margin-left: 20px;
+        padding: 20px;
+        align-content: center;
+    }
+    #bb{
+        width: 310px;
+        height: 400px;
+        margin-left: 20px;
+
+    }
+    .sbox{
+        background-color: white;
+        width: 330px;
+        height: 130px;
+        padding: 10px;
+
+    }
+    #sup{
+        width: 280px;
+        height: 30px;
+        background-color: rgb(255, 174, 0);
+        align-content: center;
+        text-align: center;
+        border-radius: 20px;
+        margin-left: 20px;
+    }
+    #more{
+        width: 100%;
+        height: 450px;
+        display: flex;
+        background-color: rgb(245, 213, 245);
+       
+    }
+    .mbox{
+        background-color: white;
+        width: 310px;
+        height: 380px;
+        margin-left: 20px;
+        padding: 20px;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: 150px 150px;
+        grid-template-rows: 110px 110px;
+        grid-column-gap: 10px;
+        grid-row-gap: 30px;
+    }
+
+    #ybox{
+        width: 100%;
+        height: 1050px;
+        background-color:  rgb(245, 213, 245);
+        margin-top: 0%;
+    }
+    #ybox1{
+        width: 96%;
+        height: 360px;
+        background-color: rgba(255, 189, 84, 0.851);
+        margin-left: 20px;
+        padding: 5px;
+    }
+    #dibba{
+        display: flex;
+
+    }
+    .grids{
+        width: 200px;
+        height: 260px;
+        background-color: white;
+        
+        margin-left: 20px;
+        border-radius: 5px;
+        padding: 8px;
+    }
+    #end{
+        width: 100px;
+        height: 260px;
+        margin-left: 20px;
+        align-content: center;
+    }
+    h2{
+        margin-left: 10px;
+    }
+    h5{
+        font-size: 15px;
+    }
+    #addver{
+        padding: 20px;
+        width: 300px;
+        height: 300px;
+    }
+    #hko{
+        width: 99% ;
+        height: 290px;
+        background-color: white;
+        margin-top: 50px;
+        padding: 10px;
+    }
+    #bbox{
+        width: 99%;
+        height: 270px;
+        padding: 10px;
+        background-color: white;
+        margin-top: 20px;
+    }
+    #bbdum{
+        display: flex;
+        margin-left: 10px;
+    }
+    #last{
+        width: 100%;
+        height: auto;
+        align-self: center;
+        
+    }
+    #last1{
+        width: 500px;
+        height: 150px;
+        padding: 10px;
+        margin-left: 550px;
+    }
+    #sign{
+        width: 250px;
+        height: 27px;
+        align-content: center;
+        text-align: center;
+        border-radius: 5px;
+        margin-left: 60px;
+        background: linear-gradient( 180deg, rgb(254, 244, 170), rgb(250, 179, 48));
+        border: 1px solid orange;
+    }
+    hr{
+        border: 1px solid rgba(128, 128, 128, 0.232);
+    }
+    #last2{
+        width: 100%;
+        height: 50px;
+        background-color:   rgb(58, 73, 102);
+        align-content: center;
+        color: white;
+    }
+    #hi{
+        margin-left: 700px;
+    }
+
+    #last3{
+        width: 100%;
+        height: 500px;
+        background-color:  rgb(33, 42, 60)  ;
+        
+    }
+    h6{
+        color: white;
+        font-size: 15px;
+        margin-top: 0px;
+
+    }
+    #last4{
+        width: 100%;
+        height: 250px;
+        background-color: rgb(21, 27, 40) ;
+
+    }
+    #l1{
+        margin-left: 250px;
+        display: flex;
+        height: 390px;
+    }
+    .last31{
+        width: 200px;
+        height: 380px;
+        padding: 20px;
+        margin-left: 10px;
+    }
+    .hh{
+        color: white;
+    }
+    #smthng{
+        margin-left: 600px;
+        margin-top: 25px;
+        display: flex;
+    }
+    #s1{
+        border: 1px solid grey;
+        width: 110px;
+        height: 30px;
+        margin-left: 70px;
+        align-content: center;
+        text-align: center;
+        color: white;
+        border-radius: 3px;
+    }
+    #s2{
+        border: 1px solid grey;
+        width: 80px;
+        height: 30px;
+        margin-left: 10px;
+        align-content: center;
+        text-align: center;
+        color: white;
+        border-radius: 3px;
+    }
+    #s11{
+        background-color:  rgb(33, 42, 60)  ;
+        border: transparent;
+        color: white;
+        width: 98%;
+        height: 100%;
+    }
+    
+    #end{
+        margin-left: 250px;
+        display: flex;
+        width: 70%
+    }
+    .ee{
+        width: 200px;
+        height: 200px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    .second{
+        font-size: 13.5px;
+        margin-top: -15px;
+        color: grey;
+    }
+   
+
+</style>
+<body>
+    <div id="header">
+        <div id="img">
+            <image src="amazon.png" width="100px" height="38px"></image>
+        </div>
+        <div id="lctn">
+            Delivering to Roorkee 247667
+        </div>
+
+        <div id="search">
+            <select id="spec">
+                <option value="">All</option>
+                <option value="">Alexa Skills</option>
+                <option value="">Amazon Devices</option>
+                <option value="">Amazon Fashion</option>
+                <option value="">Amazon fresh</option>
+                <option value="">Amazon pharmacy</option>
+                <option value="">appliances</option>
+                <option value="">Apps & games</option>
+                <option value="">Audible audiobooks</option>
+                <option value="">Baby</option>
+                <option value="">Beauty</option>
+                <option value="">Books</option>
+            </select>
+
+            <input type="text" placeholder="Search Amazon.in">
+            <div id="mag"><image src="mag.png" width="25px" height="25px"></image></div>
+        </div>
+
+        <select id="lang">
+            <option value="">EN</option>
+            <option value="">HI</option>
+            <option value="">TA</option>
+            <option value="">TE</option>
+            <option value="">KN</option>
+        </select>
+        <select id="acc">
+            <option value="">Account & lists</option>
+            <option value="">Your account</option>
+            <option value="">Your order</option>
+            <option value="">Your wishlist</option>
+            <option value="">Your reccomendations</option>
+            <option value="">Your prime membership</option>
+            <option value="">Your prime vedio</option>
+            <option value="">Your seller account</option>
+            <option value="">Your subscroibe & save items</option>
+        </select>
+
+        <div id="order">Returns & Orders</div>
+        <div id="cartimg">
+            <image src="cart.png" width="40px" height="40px"></image>
+        </div>
+    </div>
+
+    <div id="header2">
+        <div class="box"><b>All ></b></div>
+        <div class="box">Fresh</div>
+        <div class="box">MX player</div>
+        <div class="box">Sell</div>
+        <div class="box">Best sellers</div>
+        <div class="box">Today's deal</div>
+        <div class="box">Mobiles</div>
+        <div class="box">Electronics</div>
+        <div class="box">Home & kitchen</div>
+        <div class="box">Prime</div>
+        <div class="box">Customer service</div>
+        <div class="box">Fashion</div>
+        <div class="box">New Releases</div>
+        <div class="box">Fashion</div>
+        <div class="box">Car & motorbike</div>
+        <div class="box">Computers</div>
+    </div>
+    <div id="bg">
+        <image src="amazonbg.jpg" width="100%" height="250px"></image>
+    </div>
+    <div id="bg2">
+        <div class="wbox">
+            <h2>Great Indian Festival / New deals added everyday</h2>
+            <image src="apic1.jpg" width="310px" height="280px"></image>
+            <a href="">Explore</a>
+        </div>
+        <div class="wbox">
+            <h2>Upto 80% off / Electronics & Accessories</h2>
+            <image src="apic2.jpg" width="310px" height="280px"></image>
+            <a href="">See all deals</a>
+        </div>
+        
+        <div class="wbox">
+            <h2>Minimum 50% off / Home, kitchen & more</h2>
+            <image src="apic4.jpg" width="300px" height="280px"></image>
+            <a href="">See all deals</a>
+        </div>
+       <div id="bb">
+            <div class="sbox">
+                <h2>Sign up for your best<br> experience</h2>
+                <div id="sup">Sign in securely</div>
+            </div>
+            <div id="addver">
+                <image src="ac.jpg" width="310px" height="260px"></image>
+                <a href="">sponsored</a>
+            </div>
+       </div>
+        
+    </div>
+
+
+    <div  id="more">
+        <div class="mbox">
+            <h2>Minimum 60% off / deals on amazon brands</h2>
+            <div class="grid-container">
+                <div class="grid-box"><image src="gb11.jpg" width="150px" height="100px"></image><br>bean bags</div>
+                <div class="grid-box"><image src="gb12.jpg" width="150px" height="100px"></image><br>home decor</div>
+                <div class="grid-box"><image src="gb13.jpg" width="150px" height="100px"></image><br>cookware</div>
+                <div class="grid-box"><image src="gb14.jpg" width="150px" height="100px"></image><br>dry fruits</div>
+            </div>
+            <h5> <a href="">See all offers</a></h5>
+        </div>
+       
+        <div class="mbox">
+            <h2>Upto 75% percent off / refurbished products</h2>
+            <div class="grid-container">
+                <div class="grid-box"><image src="p1.jpg" width="150px" height="100px"></image><br>Laptops</div>
+                <div class="grid-box"><image src="p2.jpg" width="150px" height="100px"></image><br>Mobiles</div>
+                <div class="grid-box"><image src="p3.jpg" width="150px" height="100px"></image><br>Headphones</div>
+                <div class="grid-box"><image src="p4.jpg" width="150px" height="100px"></image><br>Mixer grinder</div>
+            </div>
+            <h5><a href="">See all offers</a></h5>
+        </div>
+
+        <div class="mbox">
+            <h2>Starting ₹299 / latest styles from top brands</h2>
+            <div class="grid-container">
+                <div class="grid-box"><image src="s1.jpg" width="150px" height="100px"></image><br>Kurtas</div>
+                <div class="grid-box"><image src="s2.jpg" width="150px" height="100px"></image><br>Tops</div>
+                <div class="grid-box"><image src="s3.jpg" width="150px" height="100px"></image><br>Dresses</div>
+                <div class="grid-box"><image src="s4.jpg" width="150px" height="100px"></image><br>Sarees</div>
+            </div>
+            <h5><a href="">See all offers</a></h5>
+        </div>
+
+        <div class="mbox">
+            <h2>Upto 95% off / never before offers on appliances</h2>
+            <div class="grid-container">
+                <div class="grid-box"><image src="e1.jpg" width="150px" height="100px"></image><br>Front loads</div>
+                <div class="grid-box"><image src="e2.jpg" width="150px" height="100px"></image><br>High capacity fridges</div>
+                <div class="grid-box"><image src="e3.jpg" width="150px" height="100px"></image><br>Energy efficient ac</div>
+                <div class="grid-box"><image src="e4.jpg" width="150px" height="100px"></image><br>Autoclean chimneys</div>
+            </div>
+            <h5><a href="">See all offers</a></h5>
+        </div>
+    </div>
+
+
+    <div id="ybox">
+        <div id="ybox1">
+            <h2>Top deals under ₹499</h2>   
+            <div id="dibba">
+                <div class="grids">
+                    <image src="g1.jpg" width="200px" height="210px"></image>
+                    <h5>MRP: <del>₹599.00</del>    <ins>₹299</ins></h5>
+                </div>
+                <div class="grids">
+                    <image src="g2.jpg" width="200px" height="210px"></image>
+                    <h5>MRP: <del>₹1299.00</del>    <ins>₹199</ins></h5>
+                </div>
+                <div class="grids">
+                    <image src="g3.jpg" width="200px" height="210px"></image>
+                    <h5>MRP: <del>₹1999.00</del>    <ins>₹349</ins></h5>
+                </div>
+                <div class="grids">
+                    <image src="g4.jpg" width="200px" height="210px"></image>
+                    <h5>MRP: <del>₹1999.00</del>    <ins>₹429</ins></h5>
+                </div>
+                <div class="grids">
+                    <image src="g5.jpg" width="200px" height="210px"></image>
+                    <h5>MRP: <del>₹500.00</del>    <ins>₹279</ins></h5>
+                </div>
+                <div class="grids">
+                    <image src="g6.jpg" width="200px" height="210px"></image>
+                    <h5>MRP: <del>₹1299.00</del>    <ins>₹499</ins></h5>
+                </div>
+            </div>
+
+            <div id="hko">
+                <h2>Minimum 50% off / home, kitchen and outdoors</h2>
+                <image src="hko1.jpg" width="150px" height="200px"></image>
+                <image src="hko2.jpg" width="220px" height="200px"></image>
+                <image src="hko3.jpg" width="130px" height="200px"></image>
+                <image src="hko4.jpg" width="180px" height="200px"></image>
+                <image src="hko5.jpg" width="250px" height="120px"></image>
+                <image src="hko6.jpg" width="150px" height="200px"></image>
+                <image src="hko7.jpg" width="140px" height="200px"></image>
+                <image src="hko8.jpg" width="150px" height="200px"></image>
+
+            </div>
+
+            <div id="bbox">
+                <h2>Starting ₹89 / deals on mobile accessories</h2>
+                <div id="bbdum">
+                    <div class="inbox">
+                        <image src="b1.jpg" height="200px" width="200px"></image>
+                    </div>
+                    <div class="inbox">
+                        <image src="b2.jpg" height="200px" width="200px"></image>
+                    </div>
+                    <div class="inbox">
+                        <image src="b3.jpg" height="200px" width="200px"></image>
+                    </div>
+                    <div class="inbox">
+                        <image src="b4.jpg" height="200px" width="200px"></image>
+                    </div>
+                    <div class="inbox">
+                        <image src="b5.jpg" height="200px" width="200px"></image>
+                    </div>
+                    <image src="b6.jpg" height="200px" width="200px"></image>
+                    <image src="b7.jpg" height="200px" width="200px"></image>
+                </div>
+                
+            </div>
+           
+        </div>
+        
+    </div>
+    
+    <div id="last">
+        <hr>
+        <div id="last1">
+            <h2>See personalised recommendations</h2>
+            <div id="sign"><b>Sign in</b></div>
+        </div>
+        <hr>
+    </div>
+
+    <div id="last2">
+        <div id="hi">Back to top</div>
+    </div>
+
+    <div id="last3">
+        <div id="l1">
+            <div class="last31">
+                <h3 class="hh">Get to know <br>Us</h3>
+                <p>About Amazon</p>
+                <p>Careers</p>
+                <p>Press Releases</p>
+                <p>Amazon Sciences</p>
+            </div>
+
+            <div class="last31">
+                <h3 class="hh">Connect with<br> Us</h3>
+                <p>Facebook</p>
+                <p>Twitter</p>
+                <p>Instagram</p>
+            </div>
+            <div class="last31">
+                <h3 class="hh">Make money with Us</h3>
+                <p>Sell on Amazon</p>
+                <p>Sell under Amazon <br>Accelerator</p>
+                <p>Protect and Build your Brand</p>
+                <p>Amazon Global Selling</p>
+                <p>Supply to Amazon</p>
+                <p>Become an Affiliate</p>
+                <p>Fullfilment by Amazon </p>
+                <p>Advertise Your Products</p>
+                <p>Amazon Pay on Merchants</p>
+            </div>
+            <div class="last31">
+                <h3 class="hh">Let Us help you</h3>
+                <p>Your Account</p>
+                <p>Returns Centre</p>
+                <p>Records and Product Safety <br>Alerts</p>
+                <p>100% Purchase Protection</p>
+                <p>Amazon App Download</p>
+                <p>Help</p>
+            </div>
+        </div>
+        <hr>
+        <div id="smthng">
+            <image src="amazon.png" width="80px" height="30px"></image>
+            <div id="s1">
+                <select id="s11">
+                    <option value="">English</option>
+                    <option value="">Hindi</option>
+                    <option value="">Tamil</option>
+                    <option value="">Telagu</option>
+                    <option value="">Kannada</option>
+                    <option value="">Malyalam</option>
+                    <option value="">Marathi</option>
+                </select></div>
+            <div id="s2">India</div>
+        </div>
+
+       
+    </div>
+    <div id="last4">
+        <div id="end">
+            <div class="ee">
+                <p class="ran">AbeBooks</p>
+                <p class="second">Books, art <br>and collectibles</p>
+                <p class="ran">shopbop</p>
+                <p class="second">Designer <br>Fashion brands</p>
+            </div>
+            <div class="ee">
+                <p class="ran">Amazon web services</p>
+                <p class="second">Scalable cloud <br>computing services</p>
+                <p class="ran">Amazon business</p>
+                <p class="second">Everything For <br>Your Business</p>
+            </div>
+            <div class="ee">
+                <p class="ran">Audible</p>
+                <p class="second">Download <br>Audiobooks</p>
+                <p class="ran">Prime now</p>
+                <p class="second">2-hour Delivery<br> on Everyday Items</p>
+            </div>
+            <div class="ee">
+                <p class="ran">IMDb</p>
+                <p class="second">Movies, TV<br> & Celebrities</p>
+                <p class="ran">Amazon prime music</p>
+                <p class="second">100 million songs,ad-free over 15 million podcast episodes</p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
